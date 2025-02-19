@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 2px;
+  height: 100vh;
   align-items: space-between;
 }
 .left-bar{
@@ -11,8 +12,8 @@
   align-items: center;
   gap: 10px;
   width: 50%;
+  height: 100%;
   padding-top: 35px;
-  height: 100vh;
   background-color: white;
 }
 .left-bar h2{
@@ -77,6 +78,12 @@ form p{
   font-size: 12px;
   font-weight: bold;
   font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+form p:hover{
+  color: black;
+  cursor:pointer;
 }
 
 form button{
@@ -92,6 +99,14 @@ form button{
   border-radius: 15px;
   font-weight: bold;
   font-size: 15px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .suggestion{
@@ -103,11 +118,22 @@ form button{
 .right-bar{
   display: flex;
   flex-direction: column;
-  padding-top: 155px;
+  padding-top: 90px;
   align-items: center;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   background-color: black;
+}
+
+.heading-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .right-bar h2{
@@ -140,5 +166,12 @@ form button{
   border-radius: 15px;
   font-weight: bold;
   font-size: 15px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 
+}
+
+.right-bar button:hover{
+  background-color: white;
+  color: black;
 }

@@ -1,17 +1,11 @@
 import './App.css';
-import Sidebar from './components/Sidebar'
-import Navbar from './components/Navbar'
+import Dashboard from './pages/Dashboard'
 
 
 function App() {
-  return (
-  <div className="main">
-<div class="content">
-<Sidebar/>
-<Navbar/>
-</div>
-
-        </div>
+  return (    <div>
+          <Dashboard/>
+  </div>
   );
 }
 

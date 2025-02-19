@@ -185,6 +185,7 @@ form button:hover{
   flex-direction: column;
   gap: 2px;
   width: 20%;
+  height: 100%;
   padding:5px;
   background-color: #1E1E1E;
   color: white;
@@ -363,13 +364,20 @@ form button:hover{
   cursor:pointer;
   color: black;
 }
-/*Navbar Container*/
 
+/*Navbar Container*/
+.main-bar-content{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 78.3% ;
+}
 .nav-container{
    display: flex;
    flex-direction: row;
-   background: #f0f0f0;
-    justify-content: start;
+   background: white;
+   box-shadow: 2px 2px 4px 2px rgba(230, 230, 230, 0.1);
+    justify-content: space-between;
     align-items: center;
     color: black;
     font-size: 20px;
@@ -377,4 +385,84 @@ form button:hover{
     padding: 5px;
     width: 100%;
     height: 8%;
+}
+
+.nav-container h5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+  font-weight: bolder;
+  color: black;
+}
+
+/* General container style */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 97%;
+  padding: 20px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Card style for each section */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Two cards per row */
+  box-sizing: border-box;
+  height:100%;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+/* Circular progress bar section */
+.progress-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/* Progress list for each category */
+.progress-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-item span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.small-progress {
+  width: 50px;
+  height: 50px;
+}
+/*end of cards styling */
+
+/*notifications & New projects*/
+.modern-notifications{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
 }

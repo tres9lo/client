@@ -175,3 +175,57 @@ form button:hover{
   background-color: white;
   color: black;
 }
+
+
+
+/* Navbar Design */
+.nav-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.nav-header .links{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-header .links p{
+  color: white;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-header p:hover{
+  color: rgb(201, 198, 198);
+  cursor: pointer;
+
+}
+.session-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  background-color: black;
+  box-shadow: 0 0 1rem 0 rgba(249, 249, 249, 0.2);
+  border-radius: 10px;
+}
+
+.nav-header .links p:hover{
+  color: rgb(201, 198, 198);
+  cursor: pointer;
+}
